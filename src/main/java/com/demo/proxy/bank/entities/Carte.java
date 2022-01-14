@@ -11,7 +11,10 @@ import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 
 @Entity
-@Data @NoArgsConstructor @AllArgsConstructor @ToString @Getter @Setter
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+@ToString
 public class Carte {
 
 	@Id

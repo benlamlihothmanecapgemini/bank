@@ -8,8 +8,9 @@ import javax.persistence.*;
 
 @Entity
 @Data
-@NoArgsConstructor @AllArgsConstructor @ToString @Getter
-@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+@ToString
 public class Agence {
 
 	@Id

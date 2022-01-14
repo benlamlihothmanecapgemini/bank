@@ -10,7 +10,10 @@ import javax.persistence.Entity;
 import javax.persistence.OneToMany;
 
 @Entity
-@Data @NoArgsConstructor @AllArgsConstructor @ToString @Getter @Setter
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+@ToString
 @DiscriminatorValue(value = "CS")
 public class Conseiller extends Personne {
 

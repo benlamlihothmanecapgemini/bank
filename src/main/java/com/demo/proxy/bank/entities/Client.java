@@ -14,7 +14,10 @@ import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 
 @Entity
-@Data @NoArgsConstructor @AllArgsConstructor @ToString @Getter @Setter
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+@ToString
 public class Client {
 
 	@Id

@@ -12,7 +12,10 @@ import javax.persistence.Inheritance;
 import javax.persistence.InheritanceType;
 
 @Entity
-@Data @NoArgsConstructor @AllArgsConstructor @ToString @Getter @Setter
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+@ToString
 @Inheritance(strategy = InheritanceType.SINGLE_TABLE)
 @DiscriminatorColumn(name = "poste", discriminatorType = DiscriminatorType.STRING)
 public class Personne {
