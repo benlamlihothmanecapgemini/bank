@@ -1,5 +1,7 @@
 package com.demo.proxy.bank.entities;
 
+import lombok.*;
+
 import java.time.LocalDate;
 
 import javax.persistence.Entity;
@@ -9,6 +11,7 @@ import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 
 @Entity
+@Data @NoArgsConstructor @AllArgsConstructor @ToString @Getter @Setter
 public class Carte {
 
 	@Id
@@ -22,19 +25,4 @@ public class Carte {
 
 	private boolean isActivated;
 
-	public Long getId() {
-		return id;
-	}
-
-	public void setId(Long id) {
-		this.id = id;
-	}
-
-	public boolean isActivated() {
-		return isActivated;
-	}
-
-	public void setActivated(boolean activated) {
-		isActivated = activated;
-	}
 }
