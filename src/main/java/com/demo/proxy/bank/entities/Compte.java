@@ -5,14 +5,11 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.ManyToOne;
-import javax.persistence.OneToMany;
+import javax.persistence.*;
 
 @Entity
+@Inheritance(strategy = InheritanceType.SINGLE_TABLE)
+@DiscriminatorColumn(name = "poste", discriminatorType = DiscriminatorType.STRING)
 public class Compte {
 
 	@Id
@@ -24,7 +21,7 @@ public class Compte {
 	private LocalDate dateOuverture;
 	
 	private BigDecimal solde;
-	
+
 	@ManyToOne
 	private Client client;
 
