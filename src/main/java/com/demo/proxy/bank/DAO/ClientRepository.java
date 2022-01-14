@@ -1,4 +1,4 @@
-package com.demo.proxy.bank.entities.DAO;
+package com.demo.proxy.bank.DAO;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
