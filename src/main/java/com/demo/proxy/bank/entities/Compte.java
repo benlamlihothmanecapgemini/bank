@@ -1,5 +1,7 @@
 package com.demo.proxy.bank.entities;
 
+import lombok.*;
+
 import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.ArrayList;
@@ -13,6 +15,10 @@ import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 
 @Entity
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+@ToString
 public class Compte {
 
 	@Id
@@ -31,11 +37,4 @@ public class Compte {
 	@OneToMany(mappedBy = "compte")
 	private List<Carte> cartes = new ArrayList<>();
 
-	public Long getId() {
-		return id;
-	}
-
-	public void setId(Long id) {
-		this.id = id;
-	}
 }
